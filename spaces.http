@@ -1,2 +1,33 @@
 
-GET https://vz9lv7ifbk.execute-api.ap-northeast-1.amazonaws.com/dev/spaces
+@url = https://ycax7526of.execute-api.ap-northeast-1.amazonaws.com/dev
+@token = eyJraWQiOiJrRHV0NG9cL2pwa3hjc2xqd0VmSktRdGdYRkNnXC9UVnNQTThcL0F4bEEyMjVrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJlMjE0NWEwOC0wZjIxLTRiN2MtODQ0Zi0zM2E0Mjc3NDc4OGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtbm9ydGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtbm9ydGhlYXN0LTFfY3Z1MTI5WTBHIiwiY29nbml0bzp1c2VybmFtZSI6InRhbXB2Iiwib3JpZ2luX2p0aSI6IjFmYTNmNjE3LWEyYzktNDZiNS04Y2I1LTc3NDkwZWUzZDQxOSIsImF1ZCI6IjdiaWMyN3RyY2IxZ2k1cDRnbWszMDg5aWxnIiwiZXZlbnRfaWQiOiIxZWI5N2IwZS05MjZlLTRmNjUtOGNiOS01YWFlMjNiMWI1NTQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTcwMDM4NjYxMiwiZXhwIjoxNzAwMzkwMjEyLCJpYXQiOjE3MDAzODY2MTIsImp0aSI6ImY3MzczY2YzLTMyOGYtNDc0My1hMmM4LThhNmQ1NzIwMGNmNiIsImVtYWlsIjoidGFtcHZAdG1oLXRlY2hsYWIudm4ifQ.Eedd6L7kb9WvDHyXvc7P7bWefmACltjNR5kvClr2fnAQp3g870sk8PpQ6_4HwOKJi20QxAJcJIb3vXey23eF1bLPAlcEVHSN2OzI1STqN0A8HmUDawnja9dum43ssOkfgb6tjaX2UnlC7dYe7rIBvPczFpLlfvbFfgw5p3oseb_Q7X8r9KeYRDZhW3rMQohDnlaWg16mYMj5fevVRb-1CG8POp-E2Q4P7Ar_8mu3TXVRYQOC6eTN-217r8HX6knodADbx7vwCUbna5JuHzuNaodTCisb4uLq0EjN9RZYRF5FuYl6Lli9boGhGqly4eLntvM_0o_BoXtTjjVFPSENdQ
+
+GET {{url}}/spaces
+Authorization: {{token}}
+###
+
+
+POST {{url}}/spaces
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+    "location": "vietnam test"
+}
+###
+
+PUT https://ycax7526of.execute-api.ap-northeast-1.amazonaws.com/dev/spaces?id=7f5394cd-3824-47ca-86dd-b76ba303d7b2
+content-type: application/json
+
+ {
+    "location": "Paris2"
+ }
+###
+
+DELETE https://ycax7526of.execute-api.ap-northeast-1.amazonaws.com/dev/spaces?id=7f5394cd-3824-47ca-86dd-b76ba303d7b2
+content-type: application/json
+
+ {
+    "location": "Paris2"
+ }
+###

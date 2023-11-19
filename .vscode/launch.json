@@ -17,7 +17,8 @@
             ],
             "env":{
                 "AWS_REGION": "us-east-1",
-                "AWS_PROFILE": "tampv"
+                "AWS_PROFILE": "tampv",
+                "TABLE_NAME": "SpacesTable-0641493fd859"
             }
         }
     ]
