@@ -7,7 +7,7 @@ import { postSpaces } from "./PostSpaces";
 import { updateSpaces } from "./UpdateSpaces";
 import { deleteSpaces } from "./DeleteSpaces";
 
-import { MissingFieldError } from "../shared/validation";
+import { JsonError, MissingFieldError } from "../shared/Validator";
 
 const ddbClient = new DynamoDBClient({});
 
@@ -42,6 +42,12 @@ async function handler(event: APIGatewayProxyEvent, context: Context): Promise<A
             return {
                 statusCode: 400,
                 body: JSON.stringify(error.message)
+            }
+        }
+        if (error instanceof JsonError) {
+            return {
+                statusCode: 400,
+                body: error.message
             }
         }
         return {
