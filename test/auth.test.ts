@@ -7,7 +7,9 @@ async function testAuth(){
         'tampv',
         'D7j]!rnxh2RC2'
     )
-    console.log(loginResult.getSignInUserSession().getIdToken().getJwtToken());
+    console.log(loginResult)
+    const credentials = await service.generateTemporaryCredentials(loginResult);
+    console.log(credentials);
 }
 
 testAuth();
