@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "cdk deploy --all --profile tampv"
+    "deploy": "cdk deploy --all --profile tampv",
+    "dep-out": "cdk deploy --all --outputs-file outputs.json --profile tampv"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,17 @@
+{
+  "DataStack": {
+    "ExportsOutputRefSpacesTable8A9973559FB4B87D": "SpacesTable-0641493fd859"
+  },
+  "AuthStack": {
+    "ExportsOutputFnGetAttSpaceUserPool6AB542DCArnC2E21F85": "arn:aws:cognito-idp:ap-northeast-1:515697766401:userpool/ap-northeast-1_cvu129Y0G",
+    "SpaceUserPoolId": "ap-northeast-1_cvu129Y0G",
+    "SpaceUserPoolClientId": "7bic27trcb1gi5p4gmk3089ilg",
+    "SpaceIdentityPoolId": "ap-northeast-1:10459905-6171-4054-b786-4b10351c8f39"
+  },
+  "LambdaStack": {
+    "ExportsOutputFnGetAttSpacesLambdaA5F923A4ArnE59FF2BB": "arn:aws:lambda:ap-northeast-1:515697766401:function:LambdaStack-SpacesLambdaA5F923A4-EQD1DCK7jYUV"
+  },
+  "ApiStack": {
+    "SpacesApiEndpoint36C4F3B6": "https://ycax7526of.execute-api.ap-northeast-1.amazonaws.com/dev/"
+  }
+}
