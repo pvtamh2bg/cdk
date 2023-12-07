@@ -19,6 +19,7 @@ export class LambdaStack extends Stack {
             handler: 'handler',
             entry: (join(__dirname, '..', 'services', 'hello.ts')),
             environment: {
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                 STAGE: props.stageName!
             }
         })

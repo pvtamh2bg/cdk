@@ -1,5 +1,11 @@
 import { App } from "aws-cdk-lib";
-import { ApiStack, AuthStack, DataStack, LambdaStack } from "./stacks";
+import { 
+    ApiStack, 
+    AuthStack, 
+    DataStack, 
+    LambdaStack, 
+    MonitorStack 
+} from "./stacks";
 
 const app = new App();
 
@@ -12,3 +18,4 @@ new ApiStack(app, 'ApiStack', {
     spacesLambdaIntegration: lambdaStack.spacesLambdaIntegration,
     userPool: authStack.userPool
 });
+new MonitorStack(app, 'MonitorStack')

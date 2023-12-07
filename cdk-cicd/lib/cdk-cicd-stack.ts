@@ -22,9 +22,6 @@ export class CdkCicdStack extends cdk.Stack {
     const testStage = pipeline.addStage(new PipelineStage(this, 'PipelineTestStage', {
       stageName: 'test'
     }))
-
-
-    
     testStage.addPre(new CodeBuildStep('unit-tests', {
       commands: [
         'cd cdk-cicd',
